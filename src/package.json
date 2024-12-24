@@ -1,0 +1,19 @@
+{
+    "name": "my-cicd-project",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "npm run lint && npm run jest",
+        "build": "npm run build-website",
+        "lint": "eslint ./src",
+        "build-website": "webpack --mode production"
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+        "webpack": "^5.0.0",
+        "eslint": "^8.0.0",
+        "jest": "^28.0.0"
+    }
+}
